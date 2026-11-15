@@ -1,8 +1,8 @@
 /* ABYSS offline shell. Render both build placeholders before publishing. */
 'use strict';
 
-const VERSION = '10.9';
-const BUILD_ID = 'v109floodrigzoom';
+const VERSION = '11.0';
+const BUILD_ID = 'v110hydrolights';
 const SCOPE = new URL(self.registration.scope);
 const scopeKey = (() => {
   let hash = 2166136261;
