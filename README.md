@@ -1,16 +1,15 @@
-# ABYSS Rebuilt Alpha 2 — String Skin + Systems
+# ABYSS Rebuilt Alpha 3 — Structural Rigidity + Operator Controls
 
-Deploy the **entire contents** of this folder to the root of the `Yuboy15/Abyss-game` repository. The 12 PNG files **must** be in `assets/`, not in the repository root.
+## Updates
+- Increased constraint stiffness, solver iterations, and strengthened continuous-material bracing to reduce unrealistic intact-ship bending.
+- Higher accumulated stress threshold: extreme loading or severe cuts still allow progressive tearing.
+- Continuous drag cut begins immediately on pointerdown and removes intersecting structural connections. Adjustable cut width.
+- Watertight compartment overview with 12 visible flooding bays, 11 operable bulkhead doors, and per-compartment pumping.
+- Corrected door flow: OPEN doors allow adjacent compartment transfer; SEALED doors block that flow.
+- Fleet selector, world bar, 9 sea-state levels, time control, tsunami editor, map overview, pan/zoom, bridge and props controls.
+- 12 existing textures remain in assets/. Rigging, sound, lights, and original particle-spring simulation retained.
 
-## Changed
-- Replaced disconnected square artwork tiles with a triangular surface that follows structural particles and severs with real links.
-- Added tension-only rigging tied to material points.
-- Restored compact left destruction tool strip, lower controls, systems drawer, doors, pumps, lights, room boundaries, map mini-view, day/night toggle, zoom, basic props and cutting width.
-- Cut and rig-cut now intersect actual spring or rope segments.
-- Service worker cache bumped to alpha2.
+## Limits
+This is an iterative rebuild, not a complete port of the legacy game's exact per-vessel compartments, every historical bulkhead, advanced props or full original UI. Water volumes are approximate. The current mini-map is schematic, not a terrain editor. Tsunami height, direction, width and start coordinate now control a localized travelling wave pulse. It remains an approximate 2D wave model.
 
-## Limitations
-- This is an experimental rebuild, not a full recreation of Floating Sandbox or the complete old ABYSS feature set.
-- Ship textures are originals; tiny triangular regions may reveal seams during deformation.
-- Doors and compartments are simplified, rigging uses inferred points, sound currently provides only a synthesised engine tone.
-- Test on iPad before replacing any stable game.
+GitHub Pages: upload index.html, engine.js, sw.js, README.md into repository root; keep assets/ intact.
