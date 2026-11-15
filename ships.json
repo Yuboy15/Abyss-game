@@ -1,0 +1,14 @@
+{
+  "titanic": "RMS Titanic",
+  "britannic": "HMHS Britannic",
+  "lusitania": "RMS Lusitania",
+  "cargo": "MV Northstar",
+  "queenmary": "RMS Queen Mary",
+  "normandie": "SS Normandie",
+  "majestic": "RMS Majestic",
+  "lusitania_black": "RMS Lusitania (Black Funnels)",
+  "cruise": "Ocean Cruise Ship",
+  "container": "Container Ship",
+  "amatola": "SAS Amatola",
+  "edmund": "SS Edmund Fitzgerald"
+}
